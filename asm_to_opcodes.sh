@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# asm2opc_1k_fixed.sh  –  keep files that yield ≥1 000 opcodes,
-#                         save exactly the first 1 000
 
 set -euo pipefail
 
