@@ -24,10 +24,10 @@ for asm in asm/*.asm; do
     lines=$(wc -l < "$tmp")
     if (( lines == 1000 )); then
         mv "$tmp" "opcodes/$base.txt"
-        echo "✔  $base.txt  (1 000 opcodes)"
+        echo "$base.txt  (1 000 opcodes)"
     else
         rm -f "$tmp"
-        echo "✘  skipped $base.asm  (only $lines opcodes)"
+        echo "skipped $base.asm  (only $lines opcodes)"
     fi
 done
 
